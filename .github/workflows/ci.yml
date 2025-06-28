@@ -23,18 +23,17 @@ jobs:
       with:
         node-version: '16' # Specify the Node.js version
 
-    # Step 3: Install dependencies
     - name: Install dependencies
       run: npm install
 
-    # Step 4: Run unit tests
     - name: Install playwright
       run: npx playwright install
-    
-    # Step 5: Run unit tests
+        
+    - name: Build app
+      run: npm run start
+      
     - name: Run unit tests
       run: npm run test:unit
 
-    # Step 6: Run UI tests
     - name: Run UI tests
       run: npm run test:ui
