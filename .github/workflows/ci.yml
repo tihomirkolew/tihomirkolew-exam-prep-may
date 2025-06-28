@@ -38,7 +38,10 @@ jobs:
       run: |
           echo "SoftUni username: t.kolev1999"
 
-
     # Step 6: Run unit tests
     - name: Run unit tests
       run: npm run test:unit
+
+    # Step 7: Run UI tests
+    - name: Run UI tests
+      run: npm run test:UI
