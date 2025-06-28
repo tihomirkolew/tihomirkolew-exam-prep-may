@@ -27,6 +27,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    # Step 4: Run tests
-    - name: Run tests
-      run: npm test
+    # Step 4: Run unit tests
+    - name: Run unit tests
+      run: npm run test:unit
+
+    # Step 5: Run UI tests
+    - name: Run UI tests
+      run: npm run test:ui
