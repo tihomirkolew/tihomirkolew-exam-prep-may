@@ -29,8 +29,10 @@ jobs:
     - name: Install playwright
       run: npx playwright install
         
-    - name: Build app
-      run: npm run start
+    - name: Start server
+      run: npm run start &
+      env:
+        PORT: 8080
       
     - name: Run unit tests
       run: npm run test:unit
