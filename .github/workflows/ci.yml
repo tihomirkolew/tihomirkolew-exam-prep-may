@@ -23,25 +23,23 @@ jobs:
       with:
         node-version: '16' # Specify the Node.js version
 
-    # Step 3: Install dependencies
     - name: Install dependencies
       run: npm install
+      
+    - name: Install playwright
+      run: npx [;aywright install      
 
-    # Step 4: Build the application
     - name: Start server
       run: npm start &
       env:
         PORT: 8080
 
-    # Step 5: Display SoftUni username
     - name: Display SoftUni username
       run: |
           echo "SoftUni username: t.kolev1999"
 
-    # Step 6: Run unit tests
     - name: Run unit tests
       run: npm run test:unit
 
-    # Step 7: Run UI tests
     - name: Run UI tests
       run: npm run test:ui
