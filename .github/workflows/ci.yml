@@ -28,8 +28,10 @@ jobs:
       run: npm install
 
     # Step 4: Build the application
-    - name: Build the application
-      run: npm run start
+    - name: Start server
+      run: npm start &
+      env:
+        PORT: 8080
 
     # Step 5: Display SoftUni username
     - name: Display SoftUni username
