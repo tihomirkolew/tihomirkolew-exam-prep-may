@@ -1,0 +1,4 @@
+i dont know what softuni mean when they say 
+"Create a new repository in GitHub and upload the project files there."
+but then they say
+"Add the project resource files and commit them to the repository. Push the changes to the repo."
