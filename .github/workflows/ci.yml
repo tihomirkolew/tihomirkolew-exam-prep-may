@@ -28,9 +28,13 @@ jobs:
       run: npm install
 
     # Step 4: Run unit tests
+    - name: Install playwright
+      run: npx playwright install
+    
+    # Step 5: Run unit tests
     - name: Run unit tests
       run: npm run test:unit
 
-    # Step 5: Run UI tests
+    # Step 6: Run UI tests
     - name: Run UI tests
       run: npm run test:ui
