@@ -44,4 +44,4 @@ jobs:
 
     # Step 7: Run UI tests
     - name: Run UI tests
-      run: npm run test:UI
+      run: npm run test:ui
